@@ -21,9 +21,11 @@ with col3:
    st.image("./img/iris3.jpg")
 
 html_7 = """
+<body style="background-color:#fae5d3;
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h3>ข้อมูล iris หรือข้อมูลดอกไม้สำหรับทำนาย</h3></center>
 </div>
+</body>
 """
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
