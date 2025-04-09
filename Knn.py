@@ -23,7 +23,7 @@ with col3:
    st.image("./img/iris3.jpg")
 
 html_7 = """
-<div style="background-color:#33a5ff;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#d2b4de;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>ข้อมูล หรือ ข้อมูลสำหรับทำนาย</h4></center>
 </div>
 """
