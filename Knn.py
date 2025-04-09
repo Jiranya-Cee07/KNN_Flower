@@ -12,15 +12,15 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
    st.header("Versicolor")
-   st.image("./img/img2.jpg")
+   st.image("./img/iris1.jpg")
 
 with col2:
    st.header("Verginiga")
-   st.image("./img/img3.jpg")
+   st.image("./img/iris2.jpg")
 
 with col3:
    st.header("Setosa")
-   st.image("./img/img4.jpg")
+   st.image("./img/iris3.jpg")
 
 html_7 = """
 <div style="background-color:#33a5ff;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -32,7 +32,7 @@ st.markdown("")
 st.markdown("")
 
 st.subheader("ข้อมูลส่วนแรก 10 แถว")
-dt = pd.read_csv("./data/iris-3.csv")
+dt = pd.read_csv("./data/iris.csv")
 st.write(dt.head(10))
 st.subheader("ข้อมูลส่วนสุดท้าย 10 แถว")
 st.write(dt.tail(10))
@@ -73,7 +73,7 @@ sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.
 
 if st.button("ทำนายผล"):
     #st.write("ทำนาย")
-   dt = pd.read_csv("./data/iris-3.csv") 
+   dt = pd.read_csv("./data/iris.csv") 
    X = dt.drop('variety', axis=1)
    y = dt.variety   
 
@@ -86,10 +86,10 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 'Setosa':
-    st.image("./img/img2.jpg")
+    st.image("./img/iris1.jpg")
    elif out[0] == 'Versicolor':       
-    st.image("./img/img3.jpg")
+    st.image("./img/iris2.jpg")
    else:
-    st.image("./img/img4.jpg")
+    st.image("./img/iris3.jpg")
 else:
     st.write("ไม่ทำนาย")
