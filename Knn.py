@@ -7,13 +7,18 @@ import matplotlib.pyplot as plt
 
 st.title('การทำนายโรคหัวใจด้วย Machine Learning')
 #st.image("./img/cat.jpg")
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
+
 
 with col1:
+   st.header("จิรัญญา")
+   st.image("./img/me.jpg")
+
+with col2:
    st.header("ไม่เป็นโรคหัวใจ")
    st.image("./img/H.jpg")
 
-with col2:
+with col3:
    st.header("เป็นโรคหัวใจ")
    st.image("./img/H1.jpg")
 
