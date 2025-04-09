@@ -21,7 +21,7 @@ with col3:
    st.image("./img/iris3.jpg")
 
 html_7 = """
-<body style="background-color:#f0f0f0;">
+<body style="background-color:green;">
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h3>ข้อมูล iris หรือข้อมูลดอกไม้สำหรับทำนาย</h3></center>
 </div>
