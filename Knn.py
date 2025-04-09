@@ -7,7 +7,7 @@ import seaborn as sns
 
 
 st.header('การจำแนกข้อมูลด้วยเทคนิค ML')
-st.image("./img/img5.jpg")
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
