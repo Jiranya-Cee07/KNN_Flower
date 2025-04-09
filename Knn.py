@@ -5,8 +5,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
-st.title('การจำแนกข้อมูลด้วยเทคนิค Machine Learning')
+st.title('การทำนายโรคหัวใจด้วย Machine Learning')
 #st.image("./img/cat.jpg")
 col1, col2 = st.columns(2)
 
