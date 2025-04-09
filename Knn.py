@@ -12,11 +12,11 @@ col1, col2 = st.columns(2)
 
 with col1:
    st.header("จิรัญญา")
-   st.image("./img/cat.jpg")
+   st.image("./img/H.jpg")
 
 with col2:
    st.header("การทำนายโรคหัวใจ")
-   st.image("./img/cat.jpg")
+   st.image("./img/H1.jpg")
 
 html_7 = """
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -90,8 +90,8 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == '1':
-    st.image("./img/iris1.jpg")
+    st.image("./img/H1.jpg")
    elif out[0] == '0':       
-    st.image("./img/iris2.jpg")
+    st.image("./img/H.jpg")
 else:
     st.write("ไม่ทำนาย")
