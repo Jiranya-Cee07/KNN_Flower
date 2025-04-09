@@ -89,8 +89,10 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == '1':
+    st.write("เป็นโรคหัวใจ")
     st.image("./img/H1.jpg")
    else:
+    st.write("ไม่เป็นโรคหัวใจ")
     st.image("./img/H.jpg")
 else:
     st.write("ไม่ทำนาย")
