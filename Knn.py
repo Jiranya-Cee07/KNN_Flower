@@ -20,7 +20,7 @@ with col2:
 
 html_7 = """
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h3>ข้อมูล  หรือข้อมูลดอกไม้สำหรับทำนาย</h3></center>
+<center><h3>ข้อมูลสำหรับทำนาย</h3></center>
 </div>
 """
 st.markdown(html_7, unsafe_allow_html=True)
@@ -42,14 +42,14 @@ st.subheader("📌 เลือกฟีเจอร์เพื่อดูก�
 feature = st.selectbox("เลือกฟีเจอร์", dt.columns[:-1])
 
 # วาดกราฟ boxplot
-st.write(f"### 🎯 Boxplot: {feature} แยกตามชนิดของดอกไม้")
+st.write(f"### 🎯 Boxplot: {feature} แยกตามชนิดของเป็นโรคหัวใจ/ไม่เป็นโรคหัวใจ")
 fig, ax = plt.subplots()
 sns.boxplot(data=dt, x='HeartDisease', y=feature, ax=ax)
 st.pyplot(fig)
 
 # วาด pairplot
 if st.checkbox("แสดง Pairplot (ใช้เวลาประมวลผลเล็กน้อย)"):
-    st.write("### 🌺 Pairplot: การกระจายของข้อมูลทั้งหมด")
+    st.write("### Pairplot: การกระจายของข้อมูลทั้งหมด")
     fig2 = sns.pairplot(dt, hue='HeartDisease')
     st.pyplot(fig2)
 
@@ -62,12 +62,12 @@ html_8 = """
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
-pt_age = st.slider("กรุณาเลือกข้อมูล Age")
-pt_sex = st.slider("กรุณาเลือกข้อมูล Sex")
+pt_age = st.number_input("กรุณาเลือกข้อมูล Age")
+pt_sex = st.number_input("กรุณาเลือกข้อมูล Sex")
 sp_ChestPainType = st.number_input("กรุณาเลือกข้อมูล ChestPainType")
 sp_RestingBP = st.number_input("กรุณาเลือกข้อมูล RestingBP")
-pt_Cholesterol = st.slider("กรุณาเลือกข้อมูล Cholesterol")
-pt_FastingBS = st.slider("กรุณาเลือกข้อมูล FastingBS")
+pt_Cholesterol = st.number_input("กรุณาเลือกข้อมูล Cholesterol")
+pt_FastingBS = st.number_input("กรุณาเลือกข้อมูล FastingBS")
 sp_RestingECG = st.number_input("กรุณาเลือกข้อมูล RestingECG")
 sp_MaxHR = st.number_input("กรุณาเลือกข้อมูล MaxHR")
 sp_ExerciseAngina = st.number_input("กรุณาเลือกข้อมูล ExerciseAngina")
