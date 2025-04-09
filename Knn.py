@@ -27,11 +27,11 @@ st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 st.markdown("")
 
-st.subheader("ข้อมูลส่วนแรก 10 แถว")
+st.subheader("ข้อมูลส่วนแรก 5 แถว")
 dt = pd.read_csv("./data/Heart3.csv")
-st.write(dt.head(10))
-st.subheader("ข้อมูลส่วนสุดท้าย 10 แถว")
-st.write(dt.tail(10))
+st.write(dt.head(5))
+st.subheader("ข้อมูลส่วนสุดท้าย 5 แถว")
+st.write(dt.tail(5))
 
 # สถิติพื้นฐาน
 st.subheader("📈 สถิติพื้นฐานของข้อมูล")
