@@ -91,7 +91,7 @@ if st.button("ทำนายผล"):
 
    if out[0] == '1':
     st.image("./img/H1.jpg")
-   elif out[0] == '0':       
+   else:
     st.image("./img/H.jpg")
 else:
     st.write("ไม่ทำนาย")
