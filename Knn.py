@@ -5,7 +5,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-st.title('การทำนายโรคหัวใจด้วย Machine Learning')
+st.title('การทำนายโรคหัวใจด้วย K-Nearest Neighbor')
 #st.image("./img/cat.jpg")
 col1, col2, col3 = st.columns(3)
 
