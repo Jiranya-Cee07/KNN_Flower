@@ -5,4 +5,4 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.header('Jiranya')
-st.title('TESTPYTHON')
+st.title('การจำแนกข้อมูลด้วยเทคนิค Machine Learning')
